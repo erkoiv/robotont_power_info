@@ -1,0 +1,1 @@
+robotont_power_info
