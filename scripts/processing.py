@@ -8,7 +8,7 @@ from statistics import mean
 
 class processor:
     def __init__(self):
-        self.firstRun = True
+        self.firstRun = True #Flag for first 10 measurements captured
         self.powerData = {
             "time": rospy.Time.now().to_sec(),
             #It is expected that the max capacity is measured from 16.8V to nominal voltage of 14.8
