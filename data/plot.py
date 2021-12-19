@@ -5,10 +5,10 @@ import seaborn as sns
 import matplotlib.pyplot as plt 
 sns.set_theme()
 
-circles = pd.read_csv("nonHolonomicSq.csv", usecols=[1, 2, 3, 4, 5, 6])
+circles = pd.read_csv("spike.csv", usecols=[1, 2, 3, 4, 5, 6])
 
 # Time 0 - 300 (5 mins)
-t = np.linspace(0, 300, 1499)
+t = np.linspace(0, 20, 102)
 
 # Current Draw - A
 c = circles["current"][1:]
@@ -36,8 +36,8 @@ axs[1].set_ylabel("Remaining Battery (%)", fontsize=25)
 
 axs[1].set_xlabel("Time (s)", fontsize=25)
 
-axs[0].set_xlim(0, 300)
-axs[1].set_xlim(0, 300)
+axs[0].set_xlim(0, 20)
+axs[1].set_xlim(0, 20)
 
 axs[0].set_ylim(0, 20)
 axs[1].set_ylim(0, 52)
